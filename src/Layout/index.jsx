@@ -1,3 +1,4 @@
+import { Footer } from "../Components/Footer"
 import { Navbar } from "../Components/Navbar"
 
 
@@ -5,9 +6,10 @@ import { Navbar } from "../Components/Navbar"
 
 export const Layout = ({ children })=>{
     return (
-        <div className="h-[100vh] w-full p-1 bg-gradient-to-b from-black to-blue-950">
+        <div className=" w-full p-1 bg-gradient-to-b from-black to-blue-950">
             <Navbar/>
             { children }
+            <Footer/>
         </div>
     )
 }
